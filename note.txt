@@ -4,6 +4,8 @@ Name: Jonie Alaban
 School: AdZU
 Age: 25
 ------------------------
+
+
 Math: 1.0 			
 Science: 1.0 		
 Filipino: 3.0 		
@@ -33,4 +35,37 @@ Python			4
 
 res = sub * unit
 GWA = summation of all res / 23
+
+
+
+
+It seems you're on the right track! You're calculating the individual GWAs (Grade Weighted Averages) for each subject. Now, you need to compute the student's total GWA by summing up these individual GWAs and dividing by the total number of units.
+
+Here's your code updated to include the calculation of the total GWA:
+
+
+def computeGWA(math_grade, sci_grade, fil_grade, eng_grade, thesis_grade, python_grade):
+    # Define the weights for each subject
+    math_weight = 4
+    sci_weight = 3
+    fil_weight = 3
+    eng_weight = 3
+    thesis_weight = 6
+    python_weight = 4
+
+    # Calculate the individual GWAs for each subject
+    mathGWA = math_grade * math_weight
+    sciGWA = sci_grade * sci_weight
+    filGWA = fil_grade * fil_weight
+    engGWA = eng_grade * eng_weight
+    thesisGWA = thesis_grade * thesis_weight
+    pythonGWA = python_grade * python_weight
+
+    # Calculate the total units
+    total_units = math_weight + sci_weight + fil_weight + eng_weight + thesis_weight + python_weight
+
+    # Calculate the total GWA
+    studentGWA = (mathGWA + sciGWA + filGWA + engGWA + thesisGWA + pythonGWA) / total_units
+
+    return studentGWA
 
