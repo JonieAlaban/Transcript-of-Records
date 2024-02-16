@@ -1,0 +1,36 @@
+Transcript of Records
+------------------------
+Name: Jonie Alaban
+School: AdZU
+Age: 25
+------------------------
+Math: 1.0 			
+Science: 1.0 		
+Filipino: 3.0 		
+English: 3.0 		
+Thesis: 3.0 	
+Python: 2.5 
+
+GWA: 1.91
+Remarks: Passed
+
+
+
+
+------
+1.0 - 3.0 = Passed
+3.1 - above = Failed
+
+-------
+
+Subject		|No. Of Units
+Math			4
+Science			3
+Filipino		3
+English			3
+Thesis			6
+Python			4
+
+res = sub * unit
+GWA = summation of all res / 23
+
